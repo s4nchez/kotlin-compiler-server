@@ -52,6 +52,7 @@ dependencies {
     kotlinDependency("com.fasterxml.jackson.core:jackson-databind:2.10.0")
     kotlinDependency("com.fasterxml.jackson.core:jackson-core:2.10.0")
     kotlinDependency("com.fasterxml.jackson.core:jackson-annotations:2.10.0")
+    kotlinDependency("org.http4k:http4k-core:3.242.0")
     // Kotlin libraries
     kotlinDependency("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     kotlinDependency("org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion")
