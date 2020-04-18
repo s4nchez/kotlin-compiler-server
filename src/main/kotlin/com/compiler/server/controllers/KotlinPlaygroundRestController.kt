@@ -5,6 +5,7 @@ import com.compiler.server.model.ProjectType
 import com.compiler.server.service.KotlinProjectExecutor
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestMethod
 import org.springframework.web.bind.annotation.RequestParam
@@ -18,6 +19,7 @@ class KotlinPlaygroundRestController(private val kotlinProjectExecutor: KotlinPr
    * Kotlin Playground component see: https://github.com/JetBrains/kotlin-playground
    * Old server see: https://github.com/JetBrains/kotlin-web-demo
    */
+  @CrossOrigin(origins = ["https://www.http4kplayground.com"])
   @RequestMapping(
     value = ["/kotlinServer"],
     method = [RequestMethod.GET, RequestMethod.POST],
